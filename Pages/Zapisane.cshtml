@@ -1,0 +1,16 @@
+﻿@page
+@model FizzBuzzWeb.Pages.ZapisaneModel
+@{
+	ViewData["Title"] = "Zapisane";
+}
+@{
+	<p>
+		@if(Key.Msg != null)
+		{
+			foreach(var x in Key.Msg)
+			{
+				<li><b>@x</b></li>
+			}
+		}
+	</p>
+}
